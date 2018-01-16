@@ -47,7 +47,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="."
-            android:textColor="#616161"
+            android:textColor="@color/second_text_color"
             android:textSize="@dimen/port_team_score_size" />
 
 
@@ -83,7 +83,7 @@
         android:paddingBottom="@dimen/port_vertical_space"
         android:paddingTop="@dimen/port_vertical_space"
         android:text="@string/versus"
-        android:textColor="#616161"
+        android:textColor="@color/second_text_color"
         android:textSize="@dimen/port_vs_tw" />
 
     <LinearLayout
@@ -125,7 +125,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="."
-            android:textColor="#616161"
+            android:textColor="@color/second_text_color"
             android:textSize="@dimen/port_team_score_size" />
 
 
@@ -171,7 +171,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="@string/home_team"
-                android:textColor="#616161"
+                android:textColor="@color/second_text_color"
                 android:textSize="@dimen/port_team_header_size" />
 
 
@@ -217,7 +217,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="@string/visitor_team"
-                android:textColor="#616161"
+                android:textColor="@color/second_text_color"
                 android:textSize="@dimen/port_team_header_size" />
 
             <TextView
