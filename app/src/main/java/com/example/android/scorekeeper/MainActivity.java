@@ -15,13 +15,13 @@ public class MainActivity extends AppCompatActivity {
     int scoreVisitor = 0;
 
 
-    TextView scoreViewA;
-    TextView goalViewA;
-    TextView behindViewA;
-    TextView goalViewB;
-    TextView behindViewB;
-    TextView scoreViewB;
-    TextView opposeView;
+    private TextView scoreViewA;
+    private TextView goalViewA;
+    private TextView behindViewA;
+    private TextView goalViewB;
+    private TextView behindViewB;
+    private TextView scoreViewB;
+    private TextView opposeView;
 
 
     @Override
@@ -122,35 +122,35 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Displays the number of goal for Home Team.
      */
-    public void displayGoalsForHomeTeam(int goals) {
+    private void displayGoalsForHomeTeam(int goals) {
         goalViewA.setText(String.valueOf(goals));
     }
 
     /**
      * Displays the number of behind for Home Team.
      */
-    public void displayNumberOfBehindHome(int behind) {
+    private void displayNumberOfBehindHome(int behind) {
         behindViewA.setText(String.valueOf(behind));
     }
 
     /**
      * Displays the given score for Home Team.
      */
-    public void displayScoreForHomeTeam(int score) {
+    private void displayScoreForHomeTeam(int score) {
         scoreViewA.setText(String.valueOf("(" + score + ")"));
     }
 
     /**
      * Displays the number of goals for Visitor Team.
      */
-    public void displayGoalsForVisitorTeam(int goals) {
+    private void displayGoalsForVisitorTeam(int goals) {
         goalViewB.setText(String.valueOf(goals));
     }
 
     /**
      * Displays the number of behinds for Visitor Team.
      */
-    public void displayNumberOfBehindVisitor(int behind) {
+    private void displayNumberOfBehindVisitor(int behind) {
         behindViewB.setText(String.valueOf(behind));
     }
 
@@ -158,14 +158,14 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Displays the given score for Visitor Team.
      */
-    public void displayScoreForVisitorTeam(int score) {
+    private void displayScoreForVisitorTeam(int score) {
         scoreViewB.setText(String.valueOf("(" + score + ")"));
     }
 
     /**
      * Display winner team
      */
-    public void displayWinTeam(String result) {
+    private void displayWinTeam(String result) {
         opposeView.setText(result);
     }
 
