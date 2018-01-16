@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="port_root_vertical_padding">24dp</dimen>
+    <dimen name="port_root_horizontal_pading">16dp</dimen>
+    <dimen name="land_root_padding">16dp</dimen>
+    <dimen name="land_vertical_space">16dp</dimen>
+    <dimen name="port_vertical_space">16dp</dimen>
+    <dimen name="h_ll_width">0dp</dimen>
+    <dimen name="port_team_name_pad_left">4dp</dimen>
+    <dimen name="port_team_score_size">24sp</dimen>
+    <dimen name="port_vs_tw">16sp</dimen>
+    <dimen name="port_team_header_size">14sp</dimen>
+    <dimen name="port_team_name">18sp</dimen>
+    <dimen name="port_vertical_divider">56dp</dimen>
+    <dimen name="land_team_score_size">24sp</dimen>
+    <dimen name="land_vs_tw">16sp</dimen>
+    <dimen name="land_team_header_size">14sp</dimen>
+    <dimen name="land_team_name">18sp</dimen>
+    <dimen name="land_horizontal_space">8dp</dimen>
+    <dimen name="port_quart_vertical_space">4dp</dimen>
+    <dimen name="port_half_vertical_space">8dp</dimen>
+    <dimen name="port_horizontal_space">16dp</dimen>
+    <dimen name="land_team_name_pad">4dp</dimen>
+</resources>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Score Keeper</string>
+    <string name="versus">Vs.</string>
+    <string name="home_team_flag">Essendon team flag</string>
+    <string name="home_team">Home Team</string>
+    <string name="goals_for_home_team">0</string>
+    <string name="behinds_for_home_team">0</string>
+    <string name="score_for_home_team">(0)</string>
+    <string name="visitor_team_flag">Melbourne team flag</string>
+    <string name="visitor_team_name">Melbourne</string>
+    <string name="goals_for_visitor_team">0</string>
+    <string name="behinds_for_visitor_team">0</string>
+    <string name="score_for_visitor_team">(0)</string>
+    <string name="points_per_goal">Goal +6</string>
+    <string name="point_per_behind">Behind +1</string>
+    <string name="reset_button">Reset</string>
+    <string name="home_team_name">Essendon</string>
+    <string name="visitor_team">Visitor Team</string>
+    <string name="end_of_match">Result</string>
+</resources>

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/land_root_padding"
+    tools:context="com.example.android.scorekeeper.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/home_team"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/h_ll_width"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/home_team_flag"
+            android:src="@drawable/essendon" />
+
+        <TextView
+            android:layout_width="@dimen/h_ll_width"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="start"
+            android:paddingLeft="@dimen/land_team_name_pad"
+            android:paddingStart="@dimen/land_team_name_pad"
+            android:text="@string/home_team_name"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/land_team_score_size" />
+
+        <TextView
+            android:id="@+id/goals_for_home_team"
+            android:layout_width="@dimen/h_ll_width"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|end"
+            android:text="@string/goals_for_home_team"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/land_team_score_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="."
+            android:textColor="#616161"
+            android:textSize="@dimen/land_team_score_size" />
+
+
+        <TextView
+            android:id="@+id/number_of_behind_team_home"
+            android:layout_width="@dimen/h_ll_width"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/behinds_for_home_team"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/land_team_score_size" />
+
+        <TextView
+            android:id="@+id/total_score_home_team"
+            android:layout_width="@dimen/h_ll_width"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/score_for_home_team"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/land_team_score_size" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/oppose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/home_team"
+        android:paddingBottom="@dimen/land_vertical_space"
+        android:paddingTop="@dimen/land_vertical_space"
+        android:text="@string/versus"
+        android:textColor="#616161"
+        android:textSize="@dimen/land_vs_tw" />
+
+    <LinearLayout
+        android:id="@+id/away_team"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/oppose"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/h_ll_width"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/visitor_team_flag"
+            android:src="@drawable/melbourne" />
+
+        <TextView
+            android:layout_width="@dimen/h_ll_width"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="start|center"
+            android:paddingLeft="@dimen/land_team_name_pad"
+            android:paddingStart="@dimen/land_team_name_pad"
+            android:text="@string/visitor_team_name"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/land_team_score_size" />
+
+        <TextView
+            android:id="@+id/goals_for_visitor_team"
+            android:layout_width="@dimen/h_ll_width"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|end"
+            android:text="@string/goals_for_visitor_team"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/land_team_score_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="."
+            android:textColor="#616161"
+            android:textSize="@dimen/land_team_score_size" />
+
+
+        <TextView
+            android:id="@+id/number_of_behind_visitor_team"
+            android:layout_width="@dimen/h_ll_width"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/behinds_for_visitor_team"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/land_team_score_size" />
+
+        <TextView
+            android:id="@+id/total_score_visitor_team"
+            android:layout_width="@dimen/h_ll_width"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/score_for_visitor_team"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/land_team_score_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/points_button_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/land_horizontal_space"
+            android:layout_marginRight="@dimen/land_horizontal_space"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/home_team"
+                android:textColor="#616161"
+                android:textSize="@dimen/land_team_header_size" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/home_team_name"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/land_team_name" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/land_horizontal_space"
+            android:layout_marginRight="@dimen/land_horizontal_space"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/land_vertical_space"
+                android:onClick="increaseGoalsAndScoreHomeTeam"
+                android:text="@string/points_per_goal" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="increaseBehindAndScoreHomeTeam"
+                android:text="@string/point_per_behind" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/land_horizontal_space"
+            android:layout_marginStart="@dimen/land_horizontal_space"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/land_vertical_space"
+                android:onClick="increaseGoalsAndScoreVisitorTeam"
+                android:text="@string/points_per_goal" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="increaseBehindAndScoreVisitorTeam"
+                android:text="@string/point_per_behind" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/land_horizontal_space"
+            android:layout_marginStart="@dimen/land_horizontal_space"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/visitor_team"
+                android:textColor="#616161"
+                android:textSize="@dimen/land_team_header_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/visitor_team_name"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/land_team_name" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/end_match_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/reset_button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/land_vertical_space"
+        android:onClick="updateView"
+        android:text="@string/end_of_match" />
+
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:onClick="resetMatch"
+        android:text="@string/reset_button" />
+
+</RelativeLayout>
