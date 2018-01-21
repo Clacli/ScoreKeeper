@@ -17,4 +17,5 @@
     <string name="home_team_name">Essendon</string>
     <string name="visitor_team">Visitor Team</string>
     <string name="end_of_match">Result</string>
+    <string name="parenthesis">(%d)</string>
 </resources>

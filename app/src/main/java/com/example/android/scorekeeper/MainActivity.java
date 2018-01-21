@@ -7,6 +7,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static final String HOME_GOALS = "goalForHome";
     int goalHome = 0;
     int goalVisitor = 0;
     int behindHome = 0;
@@ -36,7 +37,10 @@ public class MainActivity extends AppCompatActivity {
         behindViewB = (TextView) findViewById(R.id.number_of_behind_visitor_team);
         scoreViewB = (TextView) findViewById(R.id.total_score_visitor_team);
         opposeView = (TextView) findViewById(R.id.oppose);
+
+
     }
+
 
     /**
      * This method is called when the goal +6 button is clicked.
@@ -137,7 +141,7 @@ public class MainActivity extends AppCompatActivity {
      * Displays the given score for Home Team.
      */
     private void displayScoreForHomeTeam(int score) {
-        scoreViewA.setText(String.valueOf("(" + score + ")"));
+        scoreViewA.setText(String.valueOf(String.format(getString(R.string.parenthesis), score)));
     }
 
     /**
@@ -159,7 +163,7 @@ public class MainActivity extends AppCompatActivity {
      * Displays the given score for Visitor Team.
      */
     private void displayScoreForVisitorTeam(int score) {
-        scoreViewB.setText(String.valueOf("(" + score + ")"));
+        scoreViewB.setText(String.valueOf(String.format(getString(R.string.parenthesis), score)));
     }
 
     /**
