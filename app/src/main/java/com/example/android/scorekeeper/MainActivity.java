@@ -7,7 +7,19 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static final String HOME_GOALS = "goalForHome";
+    public static final String GOAL_FOR_HOME = "goalH";
+    public static final String BEHIND_FOR_HOME = "behindH";
+    public static final String SCORE_FOR_HOME = "scoreH";
+    public static final String RESULT_OF_MATCH = "resultMatch";
+    public static final String GOAL_FOR_VISITOR = "goalV";
+    public static final String BEHIND_FOR_VISITOR = "behindV";
+    public static final String SCORE_FOR_VISITOR = "scoreV";
+    public static final String GOAL_FOR_HOME_S = "goalHs";
+    public static final String BEHIND_FOR_HOME_S = "behindHs";
+    public static final String SCORE_FOR_HOME_S = "scoreHs";
+    public static final String GOAL_FOR_VISITOR_S = "goalVs";
+    public static final String BEHIND_FOR_VISITOR_S = "behindVs";
+    public static final String SCORE_FOR_VISITOR_S = "ScoreVs";
     int goalHome = 0;
     int goalVisitor = 0;
     int behindHome = 0;
@@ -38,9 +50,65 @@ public class MainActivity extends AppCompatActivity {
         scoreViewB = (TextView) findViewById(R.id.total_score_visitor_team);
         opposeView = (TextView) findViewById(R.id.oppose);
 
-
     }
 
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        //restore numeric values of variables (int) after configuration changes occur
+        goalHome = savedInstanceState.getInt(GOAL_FOR_HOME);
+        behindHome = savedInstanceState.getInt(BEHIND_FOR_HOME);
+        scoreHome = savedInstanceState.getInt(SCORE_FOR_HOME);
+        goalVisitor = savedInstanceState.getInt(GOAL_FOR_VISITOR);
+        behindVisitor = savedInstanceState.getInt(BEHIND_FOR_VISITOR);
+        scoreVisitor = savedInstanceState.getInt(SCORE_FOR_VISITOR);
+
+        //restores scores displayed
+        String resGoalHome = savedInstanceState.getString(GOAL_FOR_HOME_S);
+        goalViewA.setText(resGoalHome);
+
+        String resBehindHome = savedInstanceState.getString(BEHIND_FOR_HOME_S);
+        behindViewA.setText(resBehindHome);
+
+        String resScoreHome = savedInstanceState.getString(SCORE_FOR_HOME_S);
+        scoreViewA.setText(resScoreHome);
+
+        String resGoalVisitor = savedInstanceState.getString(GOAL_FOR_VISITOR_S);
+        goalViewB.setText(resGoalVisitor);
+
+        String resBehindVisitor = savedInstanceState.getString(BEHIND_FOR_VISITOR_S);
+        behindViewB.setText(resBehindVisitor);
+
+        String resScoreVisitor = savedInstanceState.getString(SCORE_FOR_VISITOR_S);
+        scoreViewB.setText(resScoreVisitor);
+
+        opposeView.setText(savedInstanceState.getString(RESULT_OF_MATCH));
+    }
+
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        //save numeric values of variables when configuration change occurs
+        outState.putInt(GOAL_FOR_HOME, goalHome);
+        outState.putInt(BEHIND_FOR_HOME, behindHome);
+        outState.putInt(SCORE_FOR_HOME, scoreHome);
+        outState.putInt(GOAL_FOR_VISITOR, goalVisitor);
+        outState.putInt(BEHIND_FOR_VISITOR, behindVisitor);
+        outState.putInt(SCORE_FOR_VISITOR, scoreVisitor);
+
+        //save displayed scores
+        outState.putString(GOAL_FOR_HOME_S, goalViewA.getText().toString());
+        outState.putString(BEHIND_FOR_HOME_S, behindViewA.getText().toString());
+        outState.putString(SCORE_FOR_HOME_S, scoreViewA.getText().toString());
+        outState.putString(GOAL_FOR_VISITOR_S, goalViewB.getText().toString());
+        outState.putString(BEHIND_FOR_VISITOR_S, behindViewB.getText().toString());
+        outState.putString(SCORE_FOR_VISITOR_S, scoreViewB.getText().toString());
+        outState.putString(RESULT_OF_MATCH, opposeView.getText().toString());
+
+        super.onSaveInstanceState(outState);
+    }
 
     /**
      * This method is called when the goal +6 button is clicked.
