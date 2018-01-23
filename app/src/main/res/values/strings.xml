@@ -20,5 +20,5 @@
     <string name="parenthesis">(%d)</string>
     <string name="message_defeated">Defeated</string>
     <string name="message_defeated_by">Defeated by</string>
-    <string name="message_drew">Drew</string>
+    <string name="message_drew">Drew with</string>
 </resources>
