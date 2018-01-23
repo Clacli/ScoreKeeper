@@ -18,4 +18,7 @@
     <string name="visitor_team">Visitor Team</string>
     <string name="end_of_match">Result</string>
     <string name="parenthesis">(%d)</string>
+    <string name="message_defeated">Defeated</string>
+    <string name="message_defeated_by">Defeated by</string>
+    <string name="message_drew">Drew</string>
 </resources>

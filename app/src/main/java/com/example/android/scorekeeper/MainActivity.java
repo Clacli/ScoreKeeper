@@ -160,13 +160,13 @@ public class MainActivity extends AppCompatActivity {
      */
     public void updateView(View view) {
         if (scoreHome > scoreVisitor) {
-            displayWinTeam("Defeated");
+            displayWinTeam(getString(R.string.message_defeated));
         }
         if (scoreHome < scoreVisitor) {
-            displayWinTeam("Defeated by");
+            displayWinTeam(getString(R.string.message_defeated_by));
         }
         if (scoreHome == scoreVisitor) {
-            displayWinTeam("Drew");
+            displayWinTeam(getString(R.string.message_drew));
         }
     }
 
