@@ -20,12 +20,12 @@ public class MainActivity extends AppCompatActivity {
     public static final String GOAL_FOR_VISITOR_S = "goalVs";
     public static final String BEHIND_FOR_VISITOR_S = "behindVs";
     public static final String SCORE_FOR_VISITOR_S = "ScoreVs";
-    int goalHome = 0;
-    int goalVisitor = 0;
-    int behindHome = 0;
-    int behindVisitor = 0;
-    int scoreHome = 0;
-    int scoreVisitor = 0;
+    private int goalHome = 0;
+    private int goalVisitor = 0;
+    private int behindHome = 0;
+    private int behindVisitor = 0;
+    private int scoreHome = 0;
+    private int scoreVisitor = 0;
 
 
     private TextView scoreViewA;
