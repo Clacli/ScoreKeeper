@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-
+    //Create key costant from key Strings used to save and restore the state on configuration change
     public static final String GOAL_FOR_HOME = "goalH";
     public static final String BEHIND_FOR_HOME = "behindH";
     public static final String SCORE_FOR_HOME = "scoreH";
@@ -20,14 +20,14 @@ public class MainActivity extends AppCompatActivity {
     public static final String GOAL_FOR_VISITOR_S = "goalVs";
     public static final String BEHIND_FOR_VISITOR_S = "behindVs";
     public static final String SCORE_FOR_VISITOR_S = "ScoreVs";
+    //Declare global variables to keep track of the goals, behinds and scores of the opponent teams
     private int goalHome = 0;
     private int goalVisitor = 0;
     private int behindHome = 0;
     private int behindVisitor = 0;
     private int scoreHome = 0;
     private int scoreVisitor = 0;
-
-
+    //Create instance variables that capture from layout that capture from layout TextVievs referring to goals, behinds and scores.
     private TextView scoreViewA;
     private TextView goalViewA;
     private TextView behindViewA;
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        //Instantiate variables that capture from layout that capture from layout TextVievs referring to goals, behinds and scores.
         scoreViewA = (TextView) findViewById(R.id.total_score_home_team);
         goalViewA = (TextView) findViewById(R.id.goals_for_home_team);
         behindViewA = (TextView) findViewById(R.id.number_of_behind_team_home);
@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         behindVisitor = savedInstanceState.getInt(BEHIND_FOR_VISITOR);
         scoreVisitor = savedInstanceState.getInt(SCORE_FOR_VISITOR);
 
-        //restores scores displayed
+        //restores scores displayed as String on the screen
         String resGoalHome = savedInstanceState.getString(GOAL_FOR_HOME_S);
         goalViewA.setText(resGoalHome);
 
@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
         outState.putInt(BEHIND_FOR_VISITOR, behindVisitor);
         outState.putInt(SCORE_FOR_VISITOR, scoreVisitor);
 
-        //save displayed scores
+        //save displayed scores on the screen as Strings
         outState.putString(GOAL_FOR_HOME_S, goalViewA.getText().toString());
         outState.putString(BEHIND_FOR_HOME_S, behindViewA.getText().toString());
         outState.putString(SCORE_FOR_HOME_S, scoreViewA.getText().toString());
