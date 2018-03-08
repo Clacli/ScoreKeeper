@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="port_root_vertical_padding">24dp</dimen>
-    <dimen name="port_root_horizontal_pading">16dp</dimen>
+    <dimen name="port_root_horizontal_padding">16dp</dimen>
     <dimen name="land_root_padding">16dp</dimen>
     <dimen name="land_vertical_space">16dp</dimen>
     <dimen name="port_vertical_space">16dp</dimen>
