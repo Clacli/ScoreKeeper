@@ -6,20 +6,20 @@ import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    //Create key costant from key Strings used to save and restore the state on configuration change
-    public static final String GOAL_FOR_HOME = "goalH";
-    public static final String BEHIND_FOR_HOME = "behindH";
-    public static final String SCORE_FOR_HOME = "scoreH";
-    public static final String RESULT_OF_MATCH = "resultMatch";
-    public static final String GOAL_FOR_VISITOR = "goalV";
-    public static final String BEHIND_FOR_VISITOR = "behindV";
-    public static final String SCORE_FOR_VISITOR = "scoreV";
-    public static final String GOAL_FOR_HOME_S = "goalHs";
-    public static final String BEHIND_FOR_HOME_S = "behindHs";
-    public static final String SCORE_FOR_HOME_S = "scoreHs";
-    public static final String GOAL_FOR_VISITOR_S = "goalVs";
-    public static final String BEHIND_FOR_VISITOR_S = "behindVs";
-    public static final String SCORE_FOR_VISITOR_S = "ScoreVs";
+    //Create key constant from key Strings used to save and restore the state on configuration change
+    private static final String GOAL_FOR_HOME = "goalH";
+    private static final String BEHIND_FOR_HOME = "behindH";
+    private static final String SCORE_FOR_HOME = "scoreH";
+    private static final String RESULT_OF_MATCH = "resultMatch";
+    private static final String GOAL_FOR_VISITOR = "goalV";
+    private static final String BEHIND_FOR_VISITOR = "behindV";
+    private static final String SCORE_FOR_VISITOR = "scoreV";
+    private static final String GOAL_FOR_HOME_S = "goalHs";
+    private static final String BEHIND_FOR_HOME_S = "behindHs";
+    private static final String SCORE_FOR_HOME_S = "scoreHs";
+    private static final String GOAL_FOR_VISITOR_S = "goalVs";
+    private static final String BEHIND_FOR_VISITOR_S = "behindVs";
+    private static final String SCORE_FOR_VISITOR_S = "ScoreVs";
     //Declare global variables to keep track of the goals, behinds and scores of the opponent teams
     private int goalHome = 0;
     private int goalVisitor = 0;
