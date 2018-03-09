@@ -115,8 +115,8 @@ public class MainActivity extends AppCompatActivity {
      * Increase goals by 1 and score by 6 for Home Team and display them.
      */
     public void increaseGoalsAndScoreHomeTeam(View view) {
-        goalHome = goalHome + 1;
-        scoreHome = scoreHome + 6;
+        goalHome++;
+        scoreHome += 6;
         displayGoalsForHomeTeam(goalHome);
         displayScoreForHomeTeam(scoreHome);
     }
@@ -126,8 +126,8 @@ public class MainActivity extends AppCompatActivity {
      * Increase behind by 1 and score by 1 for Home Team and display them.
      */
     public void increaseBehindAndScoreHomeTeam(View view) {
-        behindHome = behindHome + 1;
-        scoreHome = scoreHome + 1;
+        behindHome++;
+        scoreHome++;
         displayNumberOfBehindHome(behindHome);
         displayScoreForHomeTeam(scoreHome);
     }
@@ -137,8 +137,8 @@ public class MainActivity extends AppCompatActivity {
      * Increase goals by 1 and score by 6 for Visitor Team and display them.
      */
     public void increaseGoalsAndScoreVisitorTeam(View view) {
-        goalVisitor = goalVisitor + 1;
-        scoreVisitor = scoreVisitor + 6;
+        goalVisitor++;
+        scoreVisitor += 6;
         displayGoalsForVisitorTeam(goalVisitor);
         displayScoreForVisitorTeam(scoreVisitor);
     }
@@ -148,8 +148,8 @@ public class MainActivity extends AppCompatActivity {
      * Increase behind by 1 and score by 1 for Visitor Team and display them.
      */
     public void increaseBehindAndScoreVisitorTeam(View view) {
-        behindVisitor = behindVisitor + 1;
-        scoreVisitor = scoreVisitor + 1;
+        behindVisitor++;
+        scoreVisitor++;
         displayNumberOfBehindVisitor(behindVisitor);
         displayScoreForVisitorTeam(scoreVisitor);
     }
@@ -233,7 +233,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Display winner team
+     * Displays winner team
      */
     private void displayWinTeam(String result) {
         opposeView.setText(result);
