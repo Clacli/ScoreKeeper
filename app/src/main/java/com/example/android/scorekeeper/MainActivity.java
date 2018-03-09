@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    //Create key constant from key Strings used to save and restore the state on configuration change
+    //Create key constants from key Strings used to save and restore the state on configuration change
     private static final String GOAL_FOR_HOME = "goalH";
     private static final String BEHIND_FOR_HOME = "behindH";
     private static final String SCORE_FOR_HOME = "scoreH";
@@ -20,13 +20,13 @@ public class MainActivity extends AppCompatActivity {
     private static final String GOAL_FOR_VISITOR_S = "goalVs";
     private static final String BEHIND_FOR_VISITOR_S = "behindVs";
     private static final String SCORE_FOR_VISITOR_S = "ScoreVs";
-    //Declare global variables to keep track of the goals, behinds and scores of the opponent teams
-    private int goalHome = 0;
-    private int goalVisitor = 0;
-    private int behindHome = 0;
-    private int behindVisitor = 0;
-    private int scoreHome = 0;
-    private int scoreVisitor = 0;
+    //Declare instance variables to keep track of the goals, behinds and scores of the opponent teams
+    private int goalHome;
+    private int goalVisitor;
+    private int behindHome;
+    private int behindVisitor;
+    private int scoreHome;
+    private int scoreVisitor;
     //Create instance variables that capture from layout that capture from layout TextVievs referring to goals, behinds and scores.
     private TextView scoreViewA;
     private TextView goalViewA;
