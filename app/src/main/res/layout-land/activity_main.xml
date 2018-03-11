@@ -190,6 +190,7 @@
             android:orientation="vertical">
 
             <Button
+                android:id="@+id/home_team_plus_six_button"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginBottom="@dimen/land_vertical_space"
@@ -197,6 +198,7 @@
                 android:text="@string/points_per_goal" />
 
             <Button
+                android:id="@+id/home_team_plus_one_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="increaseBehindAndScoreHomeTeam"
@@ -213,6 +215,7 @@
             android:orientation="vertical">
 
             <Button
+                android:id="@+id/visitor_team_plus_six_button"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginBottom="@dimen/land_vertical_space"
@@ -220,6 +223,7 @@
                 android:text="@string/points_per_goal" />
 
             <Button
+                android:id="@+id/visitor_team_plus_one_button"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:onClick="increaseBehindAndScoreVisitorTeam"
