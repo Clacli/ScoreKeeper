@@ -52,7 +52,7 @@
 
 
         <TextView
-            android:id="@+id/number_of_behind_team_home"
+            android:id="@+id/number_of_behind_home_team"
             android:layout_width="@dimen/horizontal_linear_layout_width"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -193,7 +193,6 @@
                 android:layout_marginLeft="@dimen/port_horizontal_space"
                 android:layout_marginRight="@dimen/port_horizontal_space"
                 android:layout_marginTop="@dimen/port_a_quarter_vertical_space"
-                android:onClick="increaseGoalsAndScoreHomeTeam"
                 android:text="@string/points_per_goal" />
 
             <Button
@@ -203,7 +202,6 @@
                 android:layout_marginLeft="@dimen/port_horizontal_space"
                 android:layout_marginRight="@dimen/port_horizontal_space"
                 android:layout_marginTop="@dimen/port_half_vertical_space"
-                android:onClick="increaseBehindAndScoreHomeTeam"
                 android:text="@string/point_per_behind" />
 
         </LinearLayout>
@@ -241,7 +239,6 @@
                 android:layout_marginLeft="@dimen/port_horizontal_space"
                 android:layout_marginRight="@dimen/port_horizontal_space"
                 android:layout_marginTop="@dimen/port_a_quarter_vertical_space"
-                android:onClick="increaseGoalsAndScoreVisitorTeam"
                 android:text="@string/points_per_goal" />
 
             <Button
@@ -251,7 +248,6 @@
                 android:layout_marginLeft="@dimen/port_horizontal_space"
                 android:layout_marginRight="@dimen/port_horizontal_space"
                 android:layout_marginTop="@dimen/port_half_vertical_space"
-                android:onClick="increaseBehindAndScoreVisitorTeam"
                 android:text="@string/point_per_behind" />
 
         </LinearLayout>
@@ -265,7 +261,6 @@
         android:layout_above="@+id/reset_button"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="@dimen/port_vertical_space"
-        android:onClick="updateView"
         android:text="@string/end_of_match" />
 
     <Button
@@ -274,7 +269,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:onClick="resetMatch"
         android:text="@string/reset_button" />
 
 </RelativeLayout>

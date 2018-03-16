@@ -49,7 +49,7 @@
 
 
         <TextView
-            android:id="@+id/number_of_behind_team_home"
+            android:id="@+id/number_of_behind_home_team"
             android:layout_width="@dimen/horizontal_linear_layout_width"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -194,14 +194,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginBottom="@dimen/land_vertical_space"
-                android:onClick="increaseGoalsAndScoreHomeTeam"
                 android:text="@string/points_per_goal" />
 
             <Button
                 android:id="@+id/home_team_plus_one_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="increaseBehindAndScoreHomeTeam"
                 android:text="@string/point_per_behind" />
 
         </LinearLayout>
@@ -219,14 +217,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginBottom="@dimen/land_vertical_space"
-                android:onClick="increaseGoalsAndScoreVisitorTeam"
                 android:text="@string/points_per_goal" />
 
             <Button
                 android:id="@+id/visitor_team_plus_one_button"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:onClick="increaseBehindAndScoreVisitorTeam"
                 android:text="@string/point_per_behind" />
 
         </LinearLayout>
@@ -266,7 +262,6 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_marginBottom="@dimen/land_vertical_space"
-        android:onClick="updateView"
         android:text="@string/end_of_match" />
 
     <Button
@@ -276,7 +271,6 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:onClick="resetMatch"
         android:text="@string/reset_button" />
 
 </RelativeLayout>
