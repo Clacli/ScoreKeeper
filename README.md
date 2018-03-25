@@ -1,7 +1,7 @@
 # ScoreKeeper
 Keep track of the score of an Australian Football match.
 
-This is project2 for Udacity - Google Android Basics Nanodegree Scholarship 2017
+This is project2 for Udacity - Google Android Basics Nanodegree Scholarship 2017/2018
 #madewithudacity #googleudacityscholars #abndproject
 
 Australian Football is a contact sport played by two opponent teams of 22 players, 18 on filed,
